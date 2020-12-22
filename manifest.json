@@ -4,7 +4,7 @@
         "overwrite": false,
         "hash": "69c206298dd7705762e602b1bed66cd9a13aa90e9c6ba6900f486956dd59c8e2"
     },
-    "index.js": "19dcd82c7234ac27b19d4e52cf572541a3a2d73f86b3a12db6bf092783b581b8",
+    "index.js": "f032fcedb09b908e29ea76b07290e29d65243afec7bf7ed22b8c0cfa2a9c9965",
     "module.json": "cfbeec80ff4a46307aaf9cfa5d4a84219d8b853246a6dcacc9e63513330bfa34",
     "settings_migrator.js": "457017eb5eb7f9cd6ee1dd0b463082e62a401724af7ba84b60d0c1dc822786cf"
   },
@@ -21,7 +21,7 @@
     "S_LEAVE_PARTY_MEMBER": 2,
     "S_LOGOUT_PARTY_MEMBER": 1,
     "S_PARTY_MEMBER_CHANGE_HP": 4,
-    "S_PARTY_MEMBER_LIST": 7,
+    "S_PARTY_MEMBER_LIST": 8,
     "S_PARTY_MEMBER_STAT_UPDATE": 3,
     "S_SPAWN_ME": 3,
     "S_SPAWN_USER": 17,

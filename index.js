@@ -1,14 +1,14 @@
 'use strict'
 
 module.exports = function AutoHeal(mod) {
-    
+
     let hooks = [],
         debug = false,
         playerLocation = {},
         partyMembers = [],
         job = -1,
         glyphs = null;
-    
+
     mod.command.add('autoheal', (p1)=> {
         if (p1) p1 = p1.toLowerCase();
         if (p1 == null) {
@@ -30,10 +30,10 @@ module.exports = function AutoHeal(mod) {
         } else {
             mod.command.message(p1 +' is an invalid argument');
             return;
-        }        
+        }
         mod.command.message('Healing ' + (mod.settings.autoHeal ? 'enabled (' + mod.settings.hpCutoff + '%)' : 'disabled'));
     });
-    
+
     mod.command.add('autocleanse', (p1) => {
         if (p1) p1 = p1.toLowerCase();
         if (p1 == null) {
@@ -113,7 +113,7 @@ module.exports = function AutoHeal(mod) {
                 playerLocation.w = event.w;
             })
             
-            hook('S_SPAWN_USER', 15, (event) => {
+            hook('S_SPAWN_USER', 17, (event) => {
                 if (partyMembers.length != 0) {
                     let member = partyMembers.find(m => m.playerId === event.playerId);
                     if (member) {
